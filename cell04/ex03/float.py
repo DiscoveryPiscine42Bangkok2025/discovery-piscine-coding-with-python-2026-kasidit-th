@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 number = input("Give me a number: ")
 
 if "." in number:
