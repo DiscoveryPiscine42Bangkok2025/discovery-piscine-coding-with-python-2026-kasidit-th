@@ -1,9 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 def find_the_redheads(family):
-    return list(
-        filter(lambda name: family[name] == "red", family.keys())
-    )
+    redheads = filter(lambda person: family[person] == "red", family)
+    return list(redheads)
 
 
 dupont_family = {

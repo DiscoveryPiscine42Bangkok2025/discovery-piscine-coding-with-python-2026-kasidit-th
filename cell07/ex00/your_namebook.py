@@ -1,11 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 def array_of_names(persons):
-    names = []
-    for first, last in persons.items():
-        full_name = first.capitalize() + " " + last.capitalize()
-        names.append(full_name)
-    return names
+    result = []
+    
+    for first_name, last_name in persons.items():
+        full_name = first_name.capitalize() + " " + last_name.capitalize()
+        result.append(full_name)
+    
+    return result
 
 
 persons = {

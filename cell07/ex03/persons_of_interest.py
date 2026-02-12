@@ -1,15 +1,15 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-def famous_births(figures: dict):
-    sorted_figures = sorted(
-        figures.values(),
-        key=lambda person: int(person["date_of_birth"])
+def famous_births(scientists):
+    # เรียงตามปีเกิด
+    sorted_scientists = sorted(
+        scientists.values(),
+        key=lambda person: person["date_of_birth"]
     )
 
-    for person in sorted_figures:
-        print(
-            f'{person["name"]} is a great scientist born in {person["date_of_birth"]}.'
-        )
+    # แสดงผล
+    for person in sorted_scientists:
+        print(f'{person["name"]} is a great scientist born in {person["date_of_birth"]}.')
 
 
 women_scientists = {
